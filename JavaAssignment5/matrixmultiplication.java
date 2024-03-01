@@ -34,16 +34,13 @@ public class matrixmultiplication {
 			int ans[][]=new int[row1][col2];
 			for (int i = 0; i < row1; i++) { 
 				for (int j = 0; j < col2; j++) { 
-					for (int k = 0; k < row2; k++) 
+					for (int k = 0; k < row2; k++) {
 						ans[i][j] += a[i][k] * b[k][j]; 
-				} 
-			} 
-			for (int i = 0; i < ans.length; i++) {
-				for (int j = 0; j < ans.length; j++) {
-					System.out.print(ans[i][j]+" ");
+						System.out.print(ans[i][j]+" ");
+					}
 				}
 				System.out.println();
-			}
+			} 
 		}
 		else {
 			System.out.println("This Two Matrixs cannot be multiply");
