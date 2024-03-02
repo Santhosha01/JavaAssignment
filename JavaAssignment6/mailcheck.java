@@ -8,7 +8,7 @@ public class mailcheck {
 		Scanner inScanner=new Scanner(System.in);
 		System.out.println("Enter the Mail ID");
 		String mailId=inScanner.nextLine().toLowerCase();
-		if(!(mailId.charAt(0)>='0'&&mailId.charAt(0)<='9'&&mailId.charAt(0)=='@')&&mailId.contains("@")&&mailId.length()>=6&&Checking(mailId)) {
+		if(mailId.length()>=6&&!(mailId.charAt(0)=='@')&&mailId.contains("@")&&mailId.length()>=6&&Checking(mailId)) {
 			System.out.println("valid");
 		}
 		else{
