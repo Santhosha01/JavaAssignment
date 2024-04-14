@@ -53,9 +53,5 @@ public class Book {
 			this.price = price;
 		}
 
-//		public void getDetails() {
-//			System.out.println("Book Details : \n\n Book Title = " + title + "\n Book Author = " + author
-//					+ "\n Book ISBN = " + isbn + " \n Publish Year = " + yearPublished + " \n Book Price = " + price);
-//		}
        
 }
