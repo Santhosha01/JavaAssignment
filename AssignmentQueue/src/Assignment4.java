@@ -1,70 +1,3 @@
-//import java.util.LinkedList;
-//import java.util.Queue;
-//import java.util.Scanner;
-//
-//public class Assignment4 {
-//    static Scanner sc = new Scanner(System.in);
-//    public static void main(String[] args) {
-//        Queue<String> q = new LinkedList<>();
-//        System.out.print("Welcome to Music Player Application");
-//        init(q);
-//    }
-//
-//    private static void init(Queue<String> q) {
-//        System.out.println("\n 1.View my playlist  \n 2.Add song \n 3.Remove Song \n 4.Current song \n 5.Exit");
-//        System.out.println("Enter your Choice");
-//        int choice = sc.nextInt();
-//        sc.nextLine();
-//        switch (choice) {
-//            case 1:
-//                printPlayList(q);
-//                init(q);
-//                break;
-//            case 2:
-//                addSongs(q);
-//                init(q);
-//                break;
-//            case 3:
-//                removeSongs(q);
-//                init(q);
-//                break;
-//            case 4:
-//                currentSong(q);
-//                init(q);
-//            case 5:
-//                System.out.println("Thank you for Using");
-//                break;
-//        }
-//    }
-//
-//    private static void currentSong(Queue<String> q) {
-//        System.out.println(q.peek() + " Song is Playing");
-//    }
-//
-//    private static void printPlayList(Queue<String> q) {
-//           System.out.println(q);
-//    }
-//
-//    private static void removeSongs(Queue<String> q) {
-//        q.remove();
-//        System.out.println("Song Deleted Successfully");
-//    }
-//
-//    private static void addSongs(Queue<String> q) {
-//        System.out.println("Enter the song name");
-//        String s= sc.nextLine();
-//        q.add(s);
-//        System.out.println("Song Added Successfully");
-//    }
-//}
-
-
-//class MusicPlayer{
-//    public MusicPlayer() {
-//
-//    }
-//}
-
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -100,6 +33,7 @@ class MusicPlayerPlaylist {
         if (currentSong == null) {
             currentSong = s;
         }
+        System.out.println("Song Added Successfully");
     }
 
     public void removeSong() {
@@ -120,6 +54,7 @@ class MusicPlayerPlaylist {
                 currentSong = null;
             }
         }
+        System.out.println("Song Removed Successfully");
     }
 
     public void playCurrentSong() {
